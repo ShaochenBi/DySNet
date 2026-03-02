@@ -9,8 +9,8 @@
 
 ---
 
-> [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://github.com/ShaochenBi/DySNet)  
-> [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk)$^{3}$, [Hao Chen](mailto:jhc@ust.hk)$^{\star}$
+> [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://github.com/ShaochenBi/DySNet),
+> [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk)$^{3}$, [Hao Chen](mailto:jhc@ust.hk)$^{\star}$,
 > **Accepted to: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026**
 
 ---
