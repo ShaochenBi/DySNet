@@ -12,7 +12,7 @@
 ---
 
 > [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://github.com/ShaochenBi/DySNet)  
-> [Shaochen Bi](mailto:bisc0507@163.com), [Weiming Wang](mailto:wmwang@hkmu.edu.hk), [Yuting He](mailto:yuting.he4@case.edu), [Hao Chen](mailto:jhc@ust.hk)  
+> [Shaochen Bi](mailto:bisc0507@163.com), [Yuting He](mailto:yuting.he4@case.edu), [Weiming Wang](mailto:wmwang@hkmu.edu.hk), [Hao Chen](mailto:jhc@ust.hk)  
 > **Accepted to: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026**
 
 ---
@@ -63,12 +63,6 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 
 ### 📈 5. Quantitative Benchmarks
 DySNet demonstrates superior performance across three major tasks:
-| Task | Dataset | Metric (DSC) | Improvement |
-|:---:|:---:|:---:|:---:|
-| **3D Cardiac** | CT | **84.1%** | +7.2% vs VoxelMorph |
-| **3D Brain** | MRI | **79.7%** | SOTA Performance |
-| **2D Brain** | MRI | **83.0%** | Robust Generalization |
-
 ---
 
 ## 🛣️ Roadmap
@@ -86,7 +80,7 @@ DySNet demonstrates superior performance across three major tasks:
 ---
 
 ## 💖 Acknowledgements
-We thank the computational resources provided by **HKUST**, **HKMU**, and **Case Western Reserve University**. We also thank the open-source community for providing the foundational frameworks that made DySNet possible. Special thanks to everyone who stars ⭐ this repository!
+We thank the computational resources provided by **HKUST**. We also thank the open-source community for providing the foundational frameworks that made DySNet possible. Special thanks to everyone who stars ⭐ this repository!
 
 ---
 
