@@ -1,15 +1,13 @@
-# [DySNet: Dynamic Stream Network](https://github.com/ShaochenBi/DySNet)
-
-[![header](https://capsule-render.vercel.app/api?type=rect&height=120&color=gradient&text=DySNet%20-%20Dynamic%20Stream%20Network&fontAlign=50&reversal=true&textBg=false&fontAlignY=37&fontSize=40&desc=For%20Combinatorial%20Explosion%20In%20Medical%20Registration&descSize=35&descAlign=50&descAlignY=75)](https://github.com/ShaochenBi/DySNet)
+[![header](https://capsule-render.vercel.app/api?type=rect&height=120&color=gradient&text=DySNet%20-%20Dynamic%20Stream%20Network&fontAlign=50&reversal=true&textBg=false&fontAlignY=37&fontSize=40&desc=For%20Combinatorial%20Explosion%20In%20Medical%20Registration&descSize=35&descAlign=50&descAlignY=75)](https://arxiv.org/abs/2512.19486)
 
 ---
-[![Paper](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://arxiv.org/abs/2506.20850) 
+[![Paper](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://arxiv.org/abs/2512.19486) 
 
 **Dynamic Stream Network (DySNet)** is a novel dynamic modeling framework designed to tackle the **Combinatorial Explosion** challenge in Deformable Medical Image Registration (DMIR). By introducing dynamic receptive fields and weights, DySNet effectively eliminates interfering features and captures potential feature relationships.
 
 ---
 
-> [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://github.com/ShaochenBi/DySNet),
+> [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://arxiv.org/abs/2512.19486),
 > [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk)$^{3}$, [Hao Chen](mailto:jhc@ust.hk)$^{\star}$,
 > **Accepted to: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026**
 
