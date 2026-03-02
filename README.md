@@ -18,7 +18,7 @@ If you plan to try DySNet, we highly recommend that you start with the **2D vers
 
 ## ✨ Highlights
 
-> **DySNet** — A modular dynamic modeling network that adaptively adjusts search spaces and directions through **Adaptive Stream Basin (AdSB)** and **Dynamic Stream Attention (DySA)** modules.
+> **DySNet** — A modular dynamic modeling network that dynamically adjusts search spaces and directions through **Adaptive Stream Basin (AdSB)** and **Dynamic Stream Attention (DySA)** modules.
 
 ---
 
