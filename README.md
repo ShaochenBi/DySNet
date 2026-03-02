@@ -4,15 +4,13 @@
 
 ---
 [![Paper](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://arxiv.org/abs/2506.20850) 
-[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Dynamic Stream Network (DySNet)** is a novel dynamic modeling framework designed to tackle the **Combinatorial Explosion** challenge in Deformable Medical Image Registration (DMIR). By introducing dynamic receptive fields and weights, DySNet effectively eliminates interfering features and captures potential feature relationships.
 
 ---
 
 > [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://github.com/ShaochenBi/DySNet)  
-> [Shaochen Bi](mailto:bisc0507@163.com), [Yuting He](mailto:yuting.he4@case.edu), [Weiming Wang](mailto:wmwang@hkmu.edu.hk), [Hao Chen](mailto:jhc@ust.hk)  
+> [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk)$^{3}$, [Hao Chen](mailto:jhc@ust.hk)$^{\star}$
 > **Accepted to: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026**
 
 ---
@@ -27,7 +25,7 @@
 In dual-input tasks like registration, the number of feature combinations grows exponentially with resolution. Static receptive fields often introduce irrelevant features. **DySNet** transforms static modeling into a "stream-like" dynamic process, significantly narrowing the search space.
 
 <div align="center">
-  <img src="fig/concept.png" width="80%" alt="Combinatorial Explosion Solution"/>
+  <img src="fig/new1.png" width="80%" alt="Combinatorial Explosion Solution"/>
   <br>
   <em>From static to dynamic: DySNet narrows the search space and accurately locates feature correspondences.</em>
 </div>
@@ -47,7 +45,7 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 * **Precise Alignment**: Adjusts search directions to capture the most accurate correspondences in the deformed space.
 
 <div align="center">
-  <img src="fig/framework.png" width="100%" alt="DySNet Framework"/>
+  <img src="fig/new3.png" width="100%" alt="DySNet Framework"/>
   <br>
   <em>The DySNet Architecture: A symmetrical registration network built with Dynamic Stream Blocks (DSB).</em>
 </div>
@@ -59,10 +57,6 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 * **Multi-Dimensional**: Supports both **2D** and **3D** registration (CT Bone, MRI Brain, Cardiac CT).
 * **Robust Performance**: Achieves SOTA performance with significant gains in DSC across multiple benchmarks.
 
----
-
-### 📈 5. Quantitative Benchmarks
-DySNet demonstrates superior performance across three major tasks:
 ---
 
 ## 🛣️ Roadmap
@@ -88,10 +82,9 @@ We thank the computational resources provided by **HKUST**. We also thank the op
 If you find our work useful for your research, please cite our paper:
 
 ```bibtex
-@InProceedings{Bi_2026_CVPR,
-    author    = {Bi, Shaochen and Wang, Weiming and He, Yuting and Chen, Hao},
-    title     = {Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2026}
+@article{bi2025dynamic,
+  title={Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration},
+  author={Bi, Shaochen and He, Yuting and Wang, Weiming and Chen, Hao},
+  journal={arXiv preprint arXiv:2512.19486},
+  year={2025}
 }
