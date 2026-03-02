@@ -25,7 +25,7 @@
 In dual-input tasks like registration, the number of feature combinations grows exponentially with resolution. Static receptive fields often introduce irrelevant features. **DySNet** transforms static modeling into a "stream-like" dynamic process, significantly narrowing the search space.
 
 <div align="center">
-  <img src="fig/new1.png" width="80%" alt="Combinatorial Explosion Solution"/>
+  <img src="fig/new1.png" width="100%" alt="Combinatorial Explosion Solution"/>
   <br>
   <em>From static to dynamic: DySNet narrows the search space and accurately locates feature correspondences.</em>
 </div>
