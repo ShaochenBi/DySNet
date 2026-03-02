@@ -23,7 +23,6 @@ from torch.distributions.normal import Normal
 import torch.nn.functional as F
 
 class Mlp(nn.Module):
-    """ Multilayer perceptron."""
 
     def __init__(self, in_features,
                  hidden_features=None,
@@ -84,14 +83,6 @@ class DySA(nn.Module):
     """
     AdSB is included in DySA.
     This is the single-point version of DySNet. The 3×3 version of DySNet can be found in DySNet_X.
-    Args:
-        input_dim (int): Number of input channels.
-        amp (int): Attention window radius.
-        num_heads (int): Number of attention heads.
-        qkv_bias (bool, optional):  If True, add a learnable bias to query, key, value. Default: False
-        q_scale (float | None, optional): Override default qk scale of head_dim ** -0.5 if set
-        attn_drop (float, optional): Dropout ratio of attention weight. Default: 0.0
-        proj_drop (float, optional): Dropout ratio of output. Default: 0.0
     """
 
     def __init__(self, input_dim, amp, num_heads, qkv_bias=False, q_scale=None, attn_drop=0., proj_drop=0.):
@@ -119,11 +110,6 @@ class DySA(nn.Module):
     def forward_cross(self, x_kv, x_q):
         """
         AdSB is included in DySA.
-        Args:
-            x_q: query features with shape (B, C, H, W)
-            x_kv: key/value features with shape (B, C, H, W)
-        Returns:
-            x_v: output features with shape (B, C, H, W)
         """
         B, C, H, W = x_q.shape
         q = self.q(x_q).reshape(B, C // self.num_heads, self.num_heads, H, W)
@@ -184,14 +170,6 @@ class DySA(nn.Module):
         return x_v
 
     def forward(self, x_q, x_kv=None, mode='cross'):
-        """
-        Forward function.
-        Args:
-            x_q: input features with shape (B, C, H, W)
-            x_kv: input features with shape (B, C, H, W), optional for cross-attention
-        Returns:
-            x_v: output features with shape (B, C, H, W)
-        """
         return self.forward_cross(x_q, x_kv)
 
 
@@ -258,9 +236,6 @@ class DSB(nn.Module):
     
 
 class VecInt(nn.Module):
-    """
-    Integrates a vector field via scaling and squaring.
-    """
 
     def __init__(self, inshape, nsteps=7):
         super().__init__()

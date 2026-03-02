@@ -22,7 +22,6 @@ import numpy as np
 import einops
 
 class Mlp(nn.Module):
-    """ Multilayer perceptron."""
 
     def __init__(self, in_features,
                  hidden_features=None,
@@ -50,14 +49,6 @@ class DySA(nn.Module):
     """
     AdSB is included in DySA.
     This is the 3×3 version of DySNet. The single-point version of DySNet can be found in DySNet_M.
-    Args:
-        input_dim (int): Number of input channels.
-        amp (int): Attention window radius.
-        num_heads (int): Number of attention heads.
-        qkv_bias (bool, optional):  If True, add a learnable bias to query, key, value. Default: False
-        q_scale (float | None, optional): Override default qk scale of head_dim ** -0.5 if set
-        attn_drop (float, optional): Dropout ratio of attention weight. Default: 0.0
-        proj_drop (float, optional): Dropout ratio of output. Default: 0.0
     """
 
     def __init__(self, input_dim, amp, num_heads, qkv_bias=False, q_scale=None, attn_drop=0., proj_drop=0.):
@@ -85,11 +76,6 @@ class DySA(nn.Module):
     def forward_cross(self, x_kv, x_q):
         """
         AdSB is included in DySA.
-        Args:
-            x_q: query features with shape (B, C, H, W)
-            x_kv: key/value features with shape (B, C, H, W)
-        Returns:
-            x_v: output features with shape (B, C, H, W)
         """
         B, C, H, W = x_q.shape
         q = self.q(x_q).reshape(B, C // self.num_heads, self.num_heads, H, W)
@@ -177,14 +163,6 @@ class DySA(nn.Module):
         return x_v
 
     def forward(self, x_q, x_kv=None, mode='cross'):
-        """
-        Forward function.
-        Args:
-            x_q: input features with shape (B, C, H, W)
-            x_kv: input features with shape (B, C, H, W), optional for cross-attention
-        Returns:
-            x_v: output features with shape (B, C, H, W)
-        """
         return self.forward_cross(x_q, x_kv)
 
 
@@ -263,11 +241,7 @@ class LayerNormProxy(nn.Module):
         return einops.rearrange(x, 'b h w c -> b c h w')
 
 class PointMaxMerging(nn.Module):
-    """ Point Max Pooling Merging Layer for 2D input
-    Args:
-        dim (int): Number of input channels.
-        norm_layer (nn.Module, optional): Normalization layer. Default: nn.GroupNorm
-    """
+
 
     def __init__(self, dim, norm_layer=nn.GroupNorm):
         super().__init__()
@@ -277,10 +251,7 @@ class PointMaxMerging(nn.Module):
         self.max_pool = nn.MaxPool2d(kernel_size=2, stride=2)
 
     def forward(self, x):
-        """
-        Args:
-            x: Input feature, tensor size (B, C, H, W)
-        """
+
         B, C, H, W = x.shape
         pad_h = H % 2
         pad_w = W % 2
@@ -299,30 +270,13 @@ class PointAvgUpExpand(nn.Module):
         self.up = nn.Upsample(scale_factor=2, mode="bilinear", align_corners=True)
 
     def forward(self, x):
-        """
-        x: (B, C, H, W)
-        """
+
         x = self.norm(x)
         x = self.up_conv(x)
         x = self.up(x)
         return x
 
 class BasicLayer(nn.Module):
-    """ A basic Swin Transformer layer for one stage (2D version).
-    Args:
-        amp (int): amplification coefficient for searching window
-        dim (int): Number of feature channels
-        depth (int): Depths of this stage.
-        num_heads (int): Number of attention heads.
-        mlp_ratio (float): Ratio of mlp hidden dim to embedding dim. Default: 4.
-        qkv_bias (bool, optional): If True, add bias to query/key/value. Default: False
-        drop (float, optional): Dropout rate. Default: 0.0
-        attn_drop (float, optional): Attention dropout rate. Default: 0.0
-        drop_path (float or list, optional): Stochastic depth rate. Default: 0.0
-        norm_layer (nn.Module, optional): Normalization layer. Default: nn.GroupNorm
-        resample (nn.Module or None, optional): Downsample or Upsample layer at the end of the layer. Default: None
-        use_checkpoint (bool): Use checkpointing to save memory. Default: False
-    """
 
     def __init__(self,
                  dim,
@@ -392,21 +346,13 @@ class PatchEmbedOverlap(nn.Module):
         self.norm = norm_layer(1, embed_dim)
 
     def forward(self, x):
-        """
-        Forward function.
-        Args:
-            x: input tensor of shape (B, C, H, W)
-        Returns:
-            tensor of shape (B, embed_dim, H_out, W_out)
-        """
+
         x = self.proj(x)
         x = self.norm(x)
         return x
 
 class DySNet_X(nn.Module):
-    """
-       structure: 4 encoding stages(BasicLayer) + 4 decoding stages(BasicLayerUp)
-    """
+
     def __init__(self,
                  amp=1,
                  in_chans=1,
@@ -414,7 +360,6 @@ class DySNet_X(nn.Module):
                  embed_dim=24,
                  depths=[2, 2, 4, 2],
                  num_heads=[1, 2, 4, 8],
-                 #num_heads=[1, 2, 4, 8, 16],
                  mlp_ratio=4.,
                  qkv_bias=False,
                  drop_rate=0.,
