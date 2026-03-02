@@ -64,9 +64,8 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 | ✅ | **Core Architecture** | Development of the DSB-based dynamic feature modeling network |
 | ✅ | **AdSB & DySA Modules** | Implementation of dynamic receptive fields and adaptive weights |
 | ✅ | **Multi-Framework Integration** | Instantiation of DySNet-X (Xmorpher) and DySNet-M (ModeT) |
-| 🔜 | **Source Code Release** | Official PyTorch implementation coming soon |
+| ✅ | **Source Code Release** | Official PyTorch implementation coming soon |
 | 🔜 | **Pre-trained Weights** | Checkpoints for 3D Brain/Cardiac datasets |
-| 🚧 | **Cross-Modal Support** | Extension to PET/CT and MRI/US registration tasks |
 | 💡 | **Memory Optimization** | Reducing GPU memory footprint for ultra-high-res 3D volumes |
 
 ---
