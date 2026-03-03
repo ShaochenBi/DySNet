@@ -11,7 +11,7 @@ If you plan to try DySNet, we highly recommend that you start with the **2D vers
 ---
 
 > [**Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration**](https://arxiv.org/abs/2512.19486),
-> [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk)$^{3}$, [Hao Chen](mailto:jhc@ust.hk)$^{\star}$,
+> [Shaochen Bi](mailto:bisc0507@163.com)$^{\dagger}$, [Yuting He](mailto:yuting.he4@case.edu)$^{\dagger\star}$, [Weiming Wang](mailto:wmwang@hkmu.edu.hk), [Hao Chen](mailto:jhc@ust.hk)$^{\star}$,
 > **Accepted to: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026**
 
 ---
