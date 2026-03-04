@@ -55,7 +55,7 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 
 ### 🧬 4. Versatility & Generalization
 * **Plug-and-Play**: Modular design that integrates seamlessly into frameworks like Xmorpher and ModeT.
-* **Multi-Dimensional**: Supports both **2D** and **3D** registration (CT Bone, MRI Brain, Cardiac CT).
+* **Multi-Dimensional**: Supports both **2D** and **3D** registration (Brain CT and MRI, Cardiac CT).
 * **Robust Performance**: Achieves SOTA performance with significant gains in DSC across multiple benchmarks.
 
 ---
@@ -67,8 +67,8 @@ Built upon the dynamic fields provided by AdSB, **DySA** introduces point-to-poi
 | ✅ | **Core Architecture** | Development of the DSB-based dynamic feature modeling network |
 | ✅ | **AdSB & DySA Modules** | Implementation of dynamic receptive fields and adaptive weights |
 | ✅ | **Multi-Framework Integration** | Instantiation of DySNet-X (Xmorpher) and DySNet-M (ModeT) |
-| ✅ | **Source Code Release** | Official PyTorch implementation coming soon |
-| 🔜 | **Pre-trained Weights** | Checkpoints for 3D Brain/Cardiac datasets |
+| ✅ | **Source Code Release** | Official PyTorch implementation has been released |
+| 🔜 | **Pre-trained Weights** | Checkpoints for datasets |
 | 💡 | **Memory Optimization** | Reducing GPU memory footprint for ultra-high-res 3D volumes |
 
 ---
