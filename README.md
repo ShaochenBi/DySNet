@@ -2,7 +2,6 @@
 
 ---
 [![Paper](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://arxiv.org/abs/2512.19486) 
-[![Paper](https://pfst.cf2.poecdn.net/base/image/0cf123d0d65dd3295d333267172440aadb9a5e327f230482c01fd9d348c3eb8a?pmaid=618620758)](https://arxiv.org/abs/2512.19486)
 <a href="./fig/newposter.png" target="_blank" rel="noopener noreferrer" 
    style="
       display:inline-block;
@@ -20,7 +19,7 @@
       margin-left:6px;
       user-select:none;
    ">
-  海报
+  Poster
 </a>
 ---
 
