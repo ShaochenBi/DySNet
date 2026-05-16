@@ -2,7 +2,9 @@
 
 ---
 [![Paper](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://arxiv.org/abs/2512.19486) 
-[![Poster](./poster/your_poster_image.png)](./fig/newposter.png)
+[![Paper](https://pfst.cf2.poecdn.net/base/image/0cf123d0d65dd3295d333267172440aadb9a5e327f230482c01fd9d348c3eb8a?pmaid=618620758)](https://arxiv.org/abs/2512.19486)
+<img src="https://pfst.cf2.poecdn.net/base/image/0cf123d0d65dd3295d333267172440aadb9a5e327f230482c01fd9d348c3eb8a.svg" alt="CVPR 2026" width="76" height="20" />
+<a href="./fig/newposter.png" style="display:inline-block; margin-left:8px; padding:4px 8px; background-color:#007ec6; color:white; font-weight:bold; border-radius:4px; text-decoration:none;" target="_blank" rel="noopener noreferrer">查看海报</a>
 ---
 
 **Dynamic Stream Network (DySNet)** is a novel dynamic modeling framework designed to tackle the **Combinatorial Explosion** challenge in Deformable Medical Image Registration (DMIR). By introducing dynamic receptive fields and weights, DySNet effectively eliminates interfering features and captures potential feature relationships. 
