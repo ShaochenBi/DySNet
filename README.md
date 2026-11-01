@@ -102,9 +102,11 @@ We thank the computational resources provided by **HKUST**. Thank collaborators 
 If you find our work useful for your research, please cite our paper:
 
 ```bibtex
-@article{bi2025dynamic,
-  title={Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration},
-  author={Bi, Shaochen and He, Yuting and Wang, Weiming and Chen, Hao},
-  journal={arXiv preprint arXiv:2512.19486},
-  year={2025}
+@InProceedings{Bi_2026_CVPR,
+    author    = {Bi, Shaochen and He, Yuting and Wang, Weiming and Chen, Hao},
+    title     = {Dynamic Stream Network for Combinatorial Explosion Problem in Deformable Medical Image Registration},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {15649-15658}
 }
